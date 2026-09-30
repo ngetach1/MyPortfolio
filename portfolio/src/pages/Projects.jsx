@@ -79,7 +79,7 @@ function Projects() {
 
         <div className="project-card">
           <img
-            src="/images/portfolio.png"
+            src="/logo.png"
             alt="React portfolio website"
           />
 

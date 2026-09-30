@@ -11,7 +11,9 @@ function App() {
   return (
     <BrowserRouter>
       <header>
-        <div className="logo">NG</div>
+        <div className="logo">
+          <img src="/logo.png" alt="NG Logo" />
+        </div>
 
         <div className="site-title">
           <h1>Natnael Getachew</h1>
