@@ -9,6 +9,7 @@ exports.getAll = async (req, res, next) => {
 
         res.json({
             success: true,
+            message: 'Services retrieved successfully',
             data: services.map(service => ({
                 id: service._id,
                 title: service.title,
@@ -31,6 +32,7 @@ exports.getById = async (req, res, next) => {
 
         res.json({
             success: true,
+            message: 'Service retrieved successfully',
             data: {
                 id: service._id,
                 title: service.title,
@@ -52,6 +54,7 @@ exports.create = async (req, res, next) => {
 
         res.status(201).json({
             success: true,
+            message: 'Service created successfully',
             data: {
                 id: service._id,
                 title: service.title,
@@ -78,6 +81,7 @@ exports.update = async (req, res, next) => {
 
         res.json({
             success: true,
+            message: 'Service updated successfully',
             data: {
                 id: service._id,
                 title: service.title,

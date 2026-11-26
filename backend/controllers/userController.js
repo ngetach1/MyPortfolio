@@ -9,6 +9,7 @@ exports.getAll = async (req, res, next) => {
 
         res.json({
             success: true,
+            message: 'Users retrieved successfully',
             data: users.map(user => ({
                 id: user._id,
                 firstname: user.firstname,
@@ -34,6 +35,7 @@ exports.getById = async (req, res, next) => {
 
         res.json({
             success: true,
+            message: 'User retrieved successfully',
             data: {
                 id: user._id,
                 firstname: user.firstname,
@@ -58,6 +60,7 @@ exports.create = async (req, res, next) => {
 
         res.status(201).json({
             success: true,
+            message: 'User created successfully',
             data: {
                 id: user._id,
                 firstname: user.firstname,
@@ -90,6 +93,7 @@ exports.update = async (req, res, next) => {
 
         res.json({
             success: true,
+            message: 'User updated successfully',
             data: {
                 id: user._id,
                 firstname: user.firstname,

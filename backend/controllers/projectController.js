@@ -9,6 +9,7 @@ exports.getAll = async (req, res, next) => {
 
         res.json({
             success: true,
+            message: 'Projects retrieved successfully',
             data: projects.map(project => ({
                 id: project._id,
                 title: project.title,
@@ -33,6 +34,7 @@ exports.getById = async (req, res, next) => {
 
         res.json({
             success: true,
+            message: 'Project retrieved successfully',
             data: {
                 id: project._id,
                 title: project.title,
@@ -56,6 +58,7 @@ exports.create = async (req, res, next) => {
 
         res.status(201).json({
             success: true,
+            message: 'Project created successfully',
             data: {
                 id: project._id,
                 title: project.title,
@@ -84,6 +87,7 @@ exports.update = async (req, res, next) => {
 
         res.json({
             success: true,
+            message: 'Project updated successfully',
             data: {
                 id: project._id,
                 title: project.title,

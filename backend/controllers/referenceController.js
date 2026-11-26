@@ -9,6 +9,7 @@ exports.getAll = async (req, res, next) => {
 
         res.json({
             success: true,
+            message: 'References retrieved successfully',
             data: references.map(reference => ({
                 id: reference._id,
                 name: reference.name,
@@ -33,6 +34,7 @@ exports.getById = async (req, res, next) => {
 
         res.json({
             success: true,
+            message: 'Reference retrieved successfully',
             data: {
                 id: reference._id,
                 name: reference.name,
@@ -56,6 +58,7 @@ exports.create = async (req, res, next) => {
 
         res.status(201).json({
             success: true,
+            message: 'Reference created successfully',
             data: {
                 id: reference._id,
                 name: reference.name,
@@ -84,6 +87,7 @@ exports.update = async (req, res, next) => {
 
         res.json({
             success: true,
+            message: 'Reference updated successfully',
             data: {
                 id: reference._id,
                 name: reference.name,
